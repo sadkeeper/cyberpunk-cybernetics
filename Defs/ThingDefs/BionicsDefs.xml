@@ -204,7 +204,7 @@
 	<ThingDef ParentName="BodyPartBionicBase">
 		<defName>cpcn_PLSdef</defName>
 		<label>projectile launch system</label>
-		<description>Outfitted with a kinetic energy recovery system, Gorilla Arms make a reliable replacement for natural limbs, improving both strength and endurance.</description>
+		<description>Installed in the forearm close to the wrist, the Projectile Launch System releases a barrage of micro projectiles with target tracking.</description>
 		<techLevel>Spacer</techLevel>
 		<costList>
 			<Steel>250</Steel>
@@ -288,8 +288,8 @@
 	
 	<ThingDef ParentName="BodyPartBionicBase">
 		<defName>cpcn_Monowire</defName>
-		<label>projectile launch system</label>
-		<description>Outfitted with a kinetic energy recovery system, Gorilla Arms make a reliable replacement for natural limbs, improving both strength and endurance.</description>
+		<label>monowire</label>
+		<description>The Monowire is a wire that retracts into the wrist, charging to deal a large amount of damage to the target within a decent range.</description>
 		<techLevel>Spacer</techLevel>
 		<costList>
 			<Steel>250</Steel>
@@ -307,7 +307,7 @@
 	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>InstallMonowire</defName>
 		<label>install monowire</label>
-		<description>Installs a Projectile Launch System in a pawn's forearm.</description>
+		<description>Installs a Monowire in a pawn's forearm.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
 		<jobString>Installing projectile launch system arm.</jobString>
 		<workAmount>3000</workAmount>

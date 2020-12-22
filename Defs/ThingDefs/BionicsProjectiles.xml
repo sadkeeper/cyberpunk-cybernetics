@@ -78,6 +78,7 @@
 	   <graphicData>
 		<texPath>Things/Projectile/Bullet_Small</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>5</drawSize>
 	   </graphicData>
 	   <projectile>
 		<flyOverhead>true</flyOverhead>
