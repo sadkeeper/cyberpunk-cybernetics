@@ -103,8 +103,40 @@
 		  <canTargetSelf>false</canTargetSelf>
 		</targetParams>
 		</MainVerb>
-  </AbilityUser.AbilityDef>
-
+    </AbilityUser.AbilityDef>
+  
+	<!--Monowire-->
+	<AbilityUser.AbilityDef>
+		<defName>cpcn_MwWhip</defName>
+		<label>fire</label>
+		<uiIconPath>UI/Icons/bullet</uiIconPath>
+		<description>Fires a barrage of small projectiles fitted with target tracking, dealing a moderate amount of damage and never missing.</description>
+		<MainVerb Class="AbilityUser.VerbProperties_Ability">
+			<abilityDef>cpcn_MwWhip</abilityDef>
+		<verbClass>AbilityUser.Verb_UseAbility</verbClass>
+		<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+		<tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+		<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+		<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>cpcn_MwProjectile</defaultProjectile>
+			<isViolent>true</isViolent>
+			<warmupTime>1</warmupTime>
+			<SecondsToRecharge>20.0</SecondsToRecharge>
+			<range>6</range>
+			<burstShotCount>1</burstShotCount>
+			<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+			<muzzleFlashScale>20</muzzleFlashScale>
+			<isPrimary>false</isPrimary>
+		<targetParams>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetBuildings>false</canTargetBuildings>
+		  <canTargetItems>false</canTargetItems>
+		  <canTargetSelf>false</canTargetSelf>
+		</targetParams>
+		</MainVerb>
+    </AbilityUser.AbilityDef>
+	
 	<!--Sounds -->
 
 	<SoundDef>

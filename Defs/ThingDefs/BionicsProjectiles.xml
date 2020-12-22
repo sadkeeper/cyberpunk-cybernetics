@@ -87,5 +87,23 @@
 	   </projectile>
 	 </ThingDef>
 	 
+	 <!--Monowire Projectile-->
+	 
+	 <ThingDef ParentName="BaseBullet" Name="cpcn_MwProjectile">
+	   <defName>cpcn_MwProjectile</defName>
+	   <thingClass>AbilityUser.Projectile_Ability</thingClass>
+	   <label>monowire label</label>
+	   <graphicData>
+		<texPath>UI/Icons/bullet</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	   </graphicData>
+	   <projectile>
+		<flyOverhead>true</flyOverhead>
+		<damageDef>Cut</damageDef>
+		<damageAmountBase>50</damageAmountBase>
+		<speed>10</speed>
+	   </projectile>
+	 </ThingDef>
+	 
 </Defs>	 
 	
