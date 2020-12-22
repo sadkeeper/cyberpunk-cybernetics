@@ -21,7 +21,7 @@
 	<!--Flying Object-->
 	
 	  <ThingDef ParentName="InvisBaseBullet" Name="cpcn_FlyingObject">
-	   <defName>cpcn_flyingobject</defName>
+	   <defName>cpcn_FlyingObject</defName>
 	   <thingClass>CyberpunkCybernetics.FlyingObject</thingClass>
 	   <label>flying object</label>
 	   <graphicData>

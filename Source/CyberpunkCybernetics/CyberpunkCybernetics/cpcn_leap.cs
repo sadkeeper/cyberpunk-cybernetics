@@ -17,7 +17,7 @@ namespace CyberpunkCybernetics
             if (TargetsAoE[0] is LocalTargetInfo t && t.Cell != default(IntVec3))
             {
                 Pawn caster = CasterPawn;
-                    FlyingObject flyingObject = (FlyingObject)GenSpawn.Spawn(ThingDef.Named("cpcn_MantisLeap"), CasterPawn.Position, CasterPawn.Map); 
+                    FlyingObject flyingObject = (FlyingObject)GenSpawn.Spawn(ThingDef.Named("cpcn_FlyingObject"), CasterPawn.Position, CasterPawn.Map); 
                     flyingObject.Launch(CasterPawn, t.Cell, CasterPawn);
             }
         }
