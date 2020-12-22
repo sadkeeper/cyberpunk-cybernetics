@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<!--Mantis Blade-->
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>cpcn_MantisBlade</defName>
+		<label>mantis blade</label>
+		<description>An installed Mantis Blade.</description>
+		<spawnThingOnRemoved>cpcn_MantisBlade</spawnThingOnRemoved>
+		<addedPartProps>
+			<partEfficiency>0.25</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>blade</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>16</power>
+						<cooldownTime>1</cooldownTime>
+						<soundMeleeHit>Pawn_Melee_PowerClaw_Hit</soundMeleeHit>
+						<soundMeleeMiss>Pawn_Melee_PowerClaw_Miss</soundMeleeMiss>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>cpcn_MantisBlade</defName>
+		<label>mantis blade</label>
+		<description>The Mantis Blade is implanted in the forearm, and is hidden when not extended. In its extended state, the shape of the Mantis Blade resembles that of the forelegs of the mantis.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<Steel>250</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>3</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>SpecialWeapon</li>
+		</techHediffsTags>
+	</ThingDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallMantisBlade</defName>
+		<label>install mantis blade</label>
+		<description>Installs a Mantis Blade in a pawn's forearm.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing mantis blade.</jobString>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>cpcn_MantisBlade</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>cpcn_MantisBlade</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>cpcn_MantisBlade</addsHediff>
+	</RecipeDef>
+	
+	<!--Gorilla Arms-->
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>cpcn_GorillaArm</defName>
+		<label>gorilla arm</label>
+		<description>An installed Gorilla Arm.</description>
+		<spawnThingOnRemoved>cpcn_GorillaArm</spawnThingOnRemoved>
+		<addedPartProps>
+			<partEfficiency>0.25</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>cpcn_GorillaArm</defName>
+		<label>gorilla arm</label>
+		<description>Outfitted with a kinetic energy recovery system, Gorilla Arms make a reliable replacement for natural limbs, improving both strength and endurance.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<Steel>100</Steel>
+			<Plasteel>4</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>3</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>SpecialWeapon</li>
+		</techHediffsTags>
+	</ThingDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallGorillaArm</defName>
+		<label>install gorilla arm</label>
+		<description>Installs a Gorilla Arm in a pawn's forearm.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing gorilla arm.</jobString>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>cpcn_GorillaArm</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>cpcn_GorillaArm</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>cpcn_GorillaArm</addsHediff>
+	</RecipeDef>
+	
+	<!-- Projectile Launch System -->
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>cpcn_PLSdef</defName>
+		<label>projectile launch system</label>
+		<description>An installed Projectile Launch System.</description>
+		<spawnThingOnRemoved>cpcn_PLSdef</spawnThingOnRemoved>
+		<addedPartProps>
+			<partEfficiency>0.25</partEfficiency>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>10</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>cpcn_PLSdef</defName>
+		<label>projectile launch system</label>
+		<description>Outfitted with a kinetic energy recovery system, Gorilla Arms make a reliable replacement for natural limbs, improving both strength and endurance.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<Steel>250</Steel>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>3</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>SpecialWeapon</li>
+		</techHediffsTags>
+	</ThingDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallPLS</defName>
+		<label>install projectile launch system</label>
+		<description>Installs a Projectile Launch System in a pawn's forearm.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing projectile launch system arm.</jobString>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>cpcn_PLSdef</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>cpcn_PLSdef</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Shoulder</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>cpcn_PLSdef</addsHediff>
+	</RecipeDef>
+	
+</Defs>

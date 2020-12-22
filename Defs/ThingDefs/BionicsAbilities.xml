@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<!--Mantis Blade Leap-->
+
+	<AbilityUser.AbilityDef>
+		<defName>cpcn_MantisLeap</defName>
+		<label>Mantis Leap</label>
+		<uiIconPath>UI/Icons/jump</uiIconPath>
+		<description>Leaps at the target with the mantis blade extended, temporarily stunning and dealing a large amount of damage.</description>
+		<MainVerb Class="AbilityUser.VerbProperties_Ability">
+		  <verbClass>CyberpunkCybernetics.cpcn_leap</verbClass>
+		  <hasStandardCommand>true</hasStandardCommand>
+		  <defaultProjectile>cpcn_MantisProjectile</defaultProjectile>
+		  <abilityDef>cpcn_MantisLeap</abilityDef>
+		  <isViolent>true</isViolent>
+		  <warmupTime>1</warmupTime>
+		  <SecondsToRecharge>20.0</SecondsToRecharge>
+		  <range>5</range>
+		  <burstShotCount>1</burstShotCount>
+		  <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+		  <soundCast>cpcn_AbilityCastSound_Leap</soundCast>
+		  <muzzleFlashScale>20</muzzleFlashScale>
+		  <isPrimary>false</isPrimary>
+		  <targetParams>
+			<canTargetLocations>true</canTargetLocations>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetItems>false</canTargetItems>
+			<canTargetSelf>false</canTargetSelf>
+		  </targetParams>
+		  <tooltipShowProjectileDamage>false</tooltipShowProjectileDamage>
+		  <tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+		  <tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+		  <tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+		</MainVerb>
+	</AbilityUser.AbilityDef>
+	
+	<!--Gorilla Stun-->
+	
+	<AbilityUser.AbilityDef>
+		<defName>cpcn_GorillaStun</defName>
+		<label>Gorilla Stun</label>
+		<uiIconPath>UI/Icons/punch</uiIconPath>
+		<description>Temporarily disables the kinetic dampeners, allowing for a large surge in power, stunning the target and dealing a large amount of damage.</description>
+		<MainVerb Class="AbilityUser.VerbProperties_Ability">
+		  <verbClass>AbilityUser.Verb_UseAbility</verbClass>
+		  <hasStandardCommand>true</hasStandardCommand>
+		  <defaultProjectile>cpcn_GorillaProjectile</defaultProjectile>
+		  <abilityDef>cpcn_GorillaStun</abilityDef>
+		  <isViolent>true</isViolent>
+		  <warmupTime>1</warmupTime>
+		  <SecondsToRecharge>20.0</SecondsToRecharge>
+		  <range>1</range>
+		  <burstShotCount>1</burstShotCount>
+		  <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+		  <soundCast>cpcn_AbilityCastSound_Leap</soundCast>
+		  <muzzleFlashScale>20</muzzleFlashScale>
+		  <isPrimary>false</isPrimary>
+		  <targetParams>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetItems>false</canTargetItems>
+			<canTargetSelf>false</canTargetSelf>
+		  </targetParams>
+		  <tooltipShowProjectileDamage>false</tooltipShowProjectileDamage>
+		  <tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+		  <tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+		  <tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+		</MainVerb>
+	</AbilityUser.AbilityDef>
+	
+	<!--Projectile Launch System-->
+	
+	<AbilityUser.AbilityDef>
+		<defName>cpcn_PLS</defName>
+		<label>fire</label>
+		<uiIconPath>UI/Icons/bullet</uiIconPath>
+		<description>Fires a barrage of small projectiles fitted with target tracking, dealing a moderate amount of damage and never missing.</description>
+		<MainVerb Class="AbilityUser.VerbProperties_Ability">
+			<abilityDef>cpcn_PLS</abilityDef>
+		<verbClass>AbilityUser.Verb_UseAbility</verbClass>
+		<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+		<tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+		<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+		<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>cpcn_PLSProjectile</defaultProjectile>
+		<isViolent>true</isViolent>
+			<warmupTime>1</warmupTime>
+			<SecondsToRecharge>5.0</SecondsToRecharge>
+			<range>24</range>
+			<burstShotCount>1</burstShotCount>
+			<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+			<muzzleFlashScale>20</muzzleFlashScale>
+			<isPrimary>false</isPrimary>
+		<targetParams>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetBuildings>false</canTargetBuildings>
+		  <canTargetItems>false</canTargetItems>
+		  <canTargetSelf>false</canTargetSelf>
+		</targetParams>
+		</MainVerb>
+  </AbilityUser.AbilityDef>
+
+	<!--Sounds -->
+
+	<SoundDef>
+	  <defName>cpcn_AbilityCastSound_Leap</defName>
+	  <context>MapOnly</context>
+	  <eventNames />
+	  <maxSimultaneous>1</maxSimultaneous>
+	  <subSounds>
+		<li>
+		  <grains>
+			<li Class="AudioGrain_Clip">
+			  <clipPath>UI/CastFlight</clipPath>
+			</li>
+		  </grains>
+		  <volumeRange>
+			<min>25</min>
+			<max>25</max>
+		  </volumeRange>
+		  <pitchRange>
+			<min>1</min>
+			<max>1</max>
+		  </pitchRange>
+		</li>
+	  </subSounds>
+	</SoundDef>
+	
+	
+	
+</Defs>

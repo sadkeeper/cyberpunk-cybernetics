@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--Mantis Projectile-->
+	
+	<ThingDef ParentName="BaseBullet" Class="AbilityUser.ProjectileDef_Ability">
+	 <defName>cpcn_MantisProjectile</defName>
+	 <thingClass>AbilityUser.Projectile_Ability</thingClass>
+	 <label>Bionics Projectile</label>
+		<graphicData>
+		  <texPath>NullTex</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+		  <flyOverhead>true</flyOverhead>
+		  <damageDef>Cut</damageDef>
+		  <damageAmountBase>25</damageAmountBase>
+		  <speed>9999</speed>
+		</projectile>
+	</ThingDef>
+	
+	<!--Flying Object-->
+	
+	  <ThingDef ParentName="InvisBaseBullet" Name="cpcn_FlyingObject">
+	   <defName>cpcn_flyingobject</defName>
+	   <thingClass>CyberpunkCybernetics.FlyingObject</thingClass>
+	   <label>flying object</label>
+	   <graphicData>
+			<texPath>NullTex</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	   <projectile>
+			<flyOverhead>true</flyOverhead>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<speed>10</speed>
+	   </projectile>
+	 </ThingDef>
+	
+	<!--InvisBullet-->
+	
+	<ThingDef Name="InvisBaseBullet" Abstract="True">
+	  <category>Projectile</category>
+	  <tickerType>Normal</tickerType>
+	  <altitudeLayer>Projectile</altitudeLayer>
+	  <thingClass>Bullet</thingClass>
+	  <label>bullet</label>
+	  <useHitPoints>False</useHitPoints>
+	  <neverMultiSelect>True</neverMultiSelect>
+	  <graphicData>
+		<shaderType>Transparent</shaderType>
+	  </graphicData>
+	</ThingDef>
+	
+	<!--Gorilla Projectile-->
+	  
+	<ThingDef ParentName="InvisBaseBullet" Name="cpcn_GorillaStun">
+	   <defName>cpcn_GorillaProjectile</defName>
+	   <thingClass>AbilityUser.Projectile_Ability</thingClass>
+	   <label>flying object</label>
+	   <graphicData>
+			<texPath>NullTex</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	   <projectile>
+			<flyOverhead>true</flyOverhead>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<speed>10</speed>
+	   </projectile>
+	 </ThingDef>
+	 
+	 <!--PLS Projectile-->
+	 
+	 <ThingDef ParentName="BaseBullet" Name="cpcn_PLSProjectile">
+	   <defName>cpcn_PLSProjectile</defName>
+	   <thingClass>AbilityUser.Projectile_Ability</thingClass>
+	   <label>pls projectile</label>
+	   <graphicData>
+		<texPath>UI/Icons/bullet</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	   </graphicData>
+	   <projectile>
+		<flyOverhead>true</flyOverhead>
+		<damageDef>Bullet</damageDef>
+		<damageAmountBase>10</damageAmountBase>
+		<speed>30</speed>
+	   </projectile>
+	 </ThingDef>
+	 
+</Defs>	 
+	
