@@ -24,7 +24,7 @@
 		  <muzzleFlashScale>20</muzzleFlashScale>
 		  <isPrimary>false</isPrimary>
 		  <targetParams>
-			<canTargetLocations>true</canTargetLocations>
+			<canTargetLocations>false</canTargetLocations>
 			<canTargetPawns>true</canTargetPawns>
 			<canTargetBuildings>false</canTargetBuildings>
 			<canTargetItems>false</canTargetItems>
@@ -55,7 +55,7 @@
 		  <range>1</range>
 		  <burstShotCount>1</burstShotCount>
 		  <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
-		  <soundCast>cpcn_AbilityCastSound_Leap</soundCast>
+		  <soundCast>cpcn_AbilityCastSound_Punch</soundCast>
 		  <muzzleFlashScale>20</muzzleFlashScale>
 		  <isPrimary>false</isPrimary>
 		  <targetParams>
@@ -108,8 +108,8 @@
 	<!--Monowire-->
 	<AbilityUser.AbilityDef>
 		<defName>cpcn_MwWhip</defName>
-		<label>fire</label>
-		<uiIconPath>UI/Icons/bullet</uiIconPath>
+		<label>whip</label>
+		<uiIconPath>UI/Icons/whip</uiIconPath>
 		<description>Fires a barrage of small projectiles fitted with target tracking, dealing a moderate amount of damage and never missing.</description>
 		<MainVerb Class="AbilityUser.VerbProperties_Ability">
 			<abilityDef>cpcn_MwWhip</abilityDef>
@@ -123,9 +123,10 @@
 			<isViolent>true</isViolent>
 			<warmupTime>1</warmupTime>
 			<SecondsToRecharge>20.0</SecondsToRecharge>
-			<range>6</range>
+			<range>3</range>
 			<burstShotCount>1</burstShotCount>
 			<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+			<soundCast>cpcn_AbilityCastSound_Whip</soundCast>
 			<muzzleFlashScale>20</muzzleFlashScale>
 			<isPrimary>false</isPrimary>
 		<targetParams>
@@ -136,33 +137,5 @@
 		</targetParams>
 		</MainVerb>
     </AbilityUser.AbilityDef>
-	
-	<!--Sounds -->
-
-	<SoundDef>
-	  <defName>cpcn_AbilityCastSound_Leap</defName>
-	  <context>MapOnly</context>
-	  <eventNames />
-	  <maxSimultaneous>1</maxSimultaneous>
-	  <subSounds>
-		<li>
-		  <grains>
-			<li Class="AudioGrain_Clip">
-			  <clipPath>UI/CastFlight</clipPath>
-			</li>
-		  </grains>
-		  <volumeRange>
-			<min>25</min>
-			<max>25</max>
-		  </volumeRange>
-		  <pitchRange>
-			<min>1</min>
-			<max>1</max>
-		  </pitchRange>
-		</li>
-	  </subSounds>
-	</SoundDef>
-	
-	
-	
+		
 </Defs>

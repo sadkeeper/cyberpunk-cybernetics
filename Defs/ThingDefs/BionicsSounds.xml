@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<!--Sounds -->
+
+	<SoundDef>
+	  <defName>cpcn_AbilityCastSound_Leap</defName>
+	  <context>MapOnly</context>
+	  <eventNames />
+	  <maxSimultaneous>1</maxSimultaneous>
+	  <subSounds>
+		<li>
+		  <grains>
+			<li Class="AudioGrain_Clip">
+			  <clipPath>UI/CastFlight</clipPath>
+			</li>
+		  </grains>
+		  <volumeRange>
+			<min>25</min>
+			<max>25</max>
+		  </volumeRange>
+		  <pitchRange>
+			<min>1</min>
+			<max>1</max>
+		  </pitchRange>
+		</li>
+	  </subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+	  <defName>cpcn_AbilityCastSound_Whip</defName>
+	  <context>MapOnly</context>
+	  <eventNames />
+	  <maxSimultaneous>1</maxSimultaneous>
+	  <subSounds>
+		<li>
+		  <grains>
+			<li Class="AudioGrain_Clip">
+			  <clipPath>UI/whip</clipPath>
+			</li>
+		  </grains>
+		  <volumeRange>
+			<min>25</min>
+			<max>25</max>
+		  </volumeRange>
+		  <pitchRange>
+			<min>1</min>
+			<max>1</max>
+		  </pitchRange>
+		</li>
+	  </subSounds>
+	</SoundDef>
+
+	<SoundDef>
+	  <defName>cpcn_AbilityCastSound_Punch</defName>
+	  <context>MapOnly</context>
+	  <eventNames />
+	  <maxSimultaneous>1</maxSimultaneous>
+	  <subSounds>
+		<li>
+		  <grains>
+			<li Class="AudioGrain_Clip">
+			  <clipPath>UI/punch</clipPath>
+			</li>
+		  </grains>
+		  <volumeRange>
+			<min>25</min>
+			<max>25</max>
+		  </volumeRange>
+		  <pitchRange>
+			<min>1</min>
+			<max>1</max>
+		  </pitchRange>
+		</li>
+	  </subSounds>
+	</SoundDef>
+
+</Defs>

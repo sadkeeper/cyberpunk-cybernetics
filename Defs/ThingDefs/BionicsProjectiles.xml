@@ -76,7 +76,7 @@
 	   <thingClass>AbilityUser.Projectile_Ability</thingClass>
 	   <label>pls projectile</label>
 	   <graphicData>
-		<texPath>UI/Icons/bullet</texPath>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	   </graphicData>
 	   <projectile>
@@ -89,19 +89,19 @@
 	 
 	 <!--Monowire Projectile-->
 	 
-	 <ThingDef ParentName="BaseBullet" Name="cpcn_MwProjectile">
+	 <ThingDef ParentName="BaseBullet" Class="AbilityUser.ProjectileDef_AbilityLaser">
 	   <defName>cpcn_MwProjectile</defName>
 	   <thingClass>AbilityUser.Projectile_Ability</thingClass>
 	   <label>monowire label</label>
 	   <graphicData>
-		<texPath>UI/Icons/bullet</texPath>
+		<texPath>UI/Attacks/whip</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	   </graphicData>
 	   <projectile>
 		<flyOverhead>true</flyOverhead>
 		<damageDef>Cut</damageDef>
 		<damageAmountBase>50</damageAmountBase>
-		<speed>10</speed>
+		<speed>999</speed>
 	   </projectile>
 	 </ThingDef>
 	 
