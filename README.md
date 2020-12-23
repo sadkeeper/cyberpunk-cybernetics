@@ -11,6 +11,8 @@ Monowire - The Monowire is a wire that retracts into the wrist, charging to deal
 Dependencies:
 - harmony
 - jecstools
+- humanoid alien races 2.0
+- mohar framework
 
 As far as I'm aware this mod isn't incompatiable with anything however I haven't done extensive testing as this mod is very work in progress, please let me know if you find any bugs or incompatibilities.
 
