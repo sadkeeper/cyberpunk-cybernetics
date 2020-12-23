@@ -10,7 +10,7 @@
 		<description>An installed Mantis Blade.</description>
 		<spawnThingOnRemoved>cpcn_MantisBlade</spawnThingOnRemoved>
 		<addedPartProps>
-			<partEfficiency>0.25</partEfficiency>
+			<partEfficiency>1.5</partEfficiency>
 		</addedPartProps>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
@@ -96,7 +96,8 @@
 		<description>An installed Gorilla Arm.</description>
 		<spawnThingOnRemoved>cpcn_GorillaArm</spawnThingOnRemoved>
 		<addedPartProps>
-			<partEfficiency>0.25</partEfficiency>
+			<partEfficiency>1.5</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
@@ -181,7 +182,7 @@
 		<description>An installed Projectile Launch System.</description>
 		<spawnThingOnRemoved>cpcn_PLSdef</spawnThingOnRemoved>
 		<addedPartProps>
-			<partEfficiency>0.25</partEfficiency>
+			<partEfficiency>1.5</partEfficiency>
 		</addedPartProps>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
@@ -266,7 +267,7 @@
 		<description>An installed Monowire.</description>
 		<spawnThingOnRemoved>cpcn_Monowire</spawnThingOnRemoved>
 		<addedPartProps>
-			<partEfficiency>0.25</partEfficiency>
+			<partEfficiency>1.5</partEfficiency>
 		</addedPartProps>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">

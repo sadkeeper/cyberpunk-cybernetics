@@ -1,0 +1,118 @@
+<Patch>
+	<Operation  Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+					<value>
+					<li Class="MoharCustomHAR.MoharBodyAddon">
+						<path>Things/blank</path>
+						<bodyPart>right shoulder</bodyPart>
+						<inFrontOfBody>true</inFrontOfBody>
+						<layerInvert>true</layerInvert>
+						<layerOffset>-0.265</layerOffset>
+						<drawSize>0.4</drawSize>
+						<angle>0</angle>
+						<drawSizePortrait>(0.01,0.01)</drawSizePortrait>
+						<drawIfUndrafted>false</drawIfUndrafted>
+						<hediffGraphics>
+							<cpcn_MantisBlade>Things/mantisbladeR</cpcn_MantisBlade>
+						</hediffGraphics>
+						<offsets>
+						<!--(positive value = right, positive value = up)-->
+						  <south>
+							<bodyTypes>
+							  <Male>(-0.85,-0.15)</Male>
+							  <Female>(-0.85,-0.15)</Female>
+							  <Fat>(-0.85,-0.15)</Fat>
+							  <Hulk>(-0.85,-0.15)</Hulk>
+							  <Thin>(-0.85,-0.15)</Thin>
+							</bodyTypes>
+							<crownTypes>
+							  <Normal_Average>(0,0)</Normal_Average>
+							</crownTypes>
+						  </south>
+						  <north>
+							<bodyTypes>
+							  <Male>(0.25,0.15)</Male>
+							  <Female>(0.25,0.15)</Female>
+							  <Fat>(0.25,0.15)</Fat>
+							  <Hulk>(0.25,0.15)</Hulk>
+							  <Thin>(0.25,0.15)</Thin>
+							</bodyTypes>
+							<crownTypes>
+							  <Normal_Average>(0,0)</Normal_Average>
+							</crownTypes>
+						  </north>
+						  <east>
+							<bodyTypes>
+							  <Male>(-0.48,0.52)</Male>
+							  <Female>(-0.48,0.52)</Female>
+							  <Fat>(-0.48,0.52)</Fat>
+							  <Hulk>(-0.48,0.52)</Hulk>
+							  <Thin>(-0.48,0.52)</Thin>
+							</bodyTypes>
+							<crownTypes>
+							  <Normal_Average>(0,0)</Normal_Average>
+							</crownTypes>
+						  </east>
+						</offsets>
+					</li>
+					<li Class="MoharCustomHAR.MoharBodyAddon">
+						<path>Things/blank</path>
+						<bodyPart>left shoulder</bodyPart>
+						<inFrontOfBody>true</inFrontOfBody>
+						<layerInvert>true</layerInvert>
+						<layerOffset>-0.265</layerOffset>
+						<drawSize>0.4</drawSize>
+						<angle>0</angle>
+						<drawSizePortrait>(0.01,0.01)</drawSizePortrait>
+						<drawIfUndrafted>false</drawIfUndrafted>
+						<hediffGraphics>
+							<cpcn_MantisBlade>Things/mantisbladeL</cpcn_MantisBlade>
+						</hediffGraphics>
+						<offsets>
+						<!--(positive value = right, positive value = up)-->
+						  <south>
+							<bodyTypes>
+							  <Male>(0,-0.15)</Male>
+							  <Female>(0,-0.15)</Female>
+							  <Fat>(0,-0.15)</Fat>
+							  <Hulk>(0,-0.15)</Hulk>
+							  <Thin>(0,-0.15)</Thin>
+							</bodyTypes>
+							<crownTypes>
+							  <Normal_Average>(0,0)</Normal_Average>
+							</crownTypes>
+						  </south>
+						  <north>
+							<bodyTypes>
+							  <Male>(-0.5,0.15)</Male>
+							  <Female>(-0.5,0.15)</Female>
+							  <Fat>(-0.5,0.15)</Fat>
+							  <Hulk>(-0.5,0.15)</Hulk>
+							  <Thin>(-0.5,0.15)</Thin>
+							</bodyTypes>
+							<crownTypes>
+							  <Normal_Average>(0,0)</Normal_Average>
+							</crownTypes>
+						  </north>
+						  <east>
+							<bodyTypes>
+							  <Male>(-0.48,0.52)</Male>
+							  <Female>(-0.48,0.52)</Female>
+							  <Fat>(-0.48,0.52)</Fat>
+							  <Hulk>(-0.48,0.52)</Hulk>
+							  <Thin>(-0.48,0.52)</Thin>
+							</bodyTypes>
+							<crownTypes>
+							  <Normal_Average>(0,0)</Normal_Average>
+							</crownTypes>
+						  </east>
+						</offsets>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+</Patch>
