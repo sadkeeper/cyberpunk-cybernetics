@@ -14,7 +14,7 @@
 		  <flyOverhead>true</flyOverhead>
 		  <damageDef>Cut</damageDef>
 		  <damageAmountBase>25</damageAmountBase>
-		  <speed>9999</speed>
+		  <speed>25</speed>
 		</projectile>
 	</ThingDef>
 	

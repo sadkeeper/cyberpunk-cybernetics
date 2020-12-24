@@ -38,6 +38,9 @@
     <Reference Include="AbilityUser">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Users\Administrator\Desktop\Code\Rimworld Mods\JecsTools-master\Assemblies\AbilityUser.dll</HintPath>
     </Reference>
+    <Reference Include="AlienRace">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Users\Administrator\Desktop\Code\Rimworld Mods\AlienRaces-master\AlienRaces-master\1.2\Assemblies\AlienRace.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -60,6 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ankle Jump.cs" />
+    <Compile Include="cpcn_jump.cs" />
     <Compile Include="MonowireProjectile.cs" />
     <Compile Include="ProjectileLaunch.cs" />
     <Compile Include="FlyingObject.cs" />

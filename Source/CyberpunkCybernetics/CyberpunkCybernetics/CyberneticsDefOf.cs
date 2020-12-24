@@ -19,5 +19,6 @@ namespace Cybernetics
         public static AbilityUser.AbilityDef cpcn_GorillaStun;
         public static AbilityUser.AbilityDef cpcn_PLS;
         public static AbilityUser.AbilityDef cpcn_MwWhip;
+        public static AbilityUser.AbilityDef cpcn_Jump;
     }
 }

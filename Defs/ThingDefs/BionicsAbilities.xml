@@ -7,7 +7,7 @@
 	<AbilityUser.AbilityDef>
 		<defName>cpcn_MantisLeap</defName>
 		<label>Mantis Leap</label>
-		<uiIconPath>UI/Icons/jump</uiIconPath>
+		<uiIconPath>UI/Icons/sprint</uiIconPath>
 		<description>Leaps at the target with the mantis blade extended, temporarily stunning and dealing a large amount of damage.</description>
 		<MainVerb Class="AbilityUser.VerbProperties_Ability">
 		  <verbClass>CyberpunkCybernetics.cpcn_leap</verbClass>
@@ -98,7 +98,7 @@
 			<isPrimary>false</isPrimary>
 		<targetParams>
 		  <canTargetPawns>true</canTargetPawns>
-		  <canTargetBuildings>false</canTargetBuildings>
+		  <canTargetBuildings>true</canTargetBuildings>
 		  <canTargetItems>false</canTargetItems>
 		  <canTargetSelf>false</canTargetSelf>
 		</targetParams>
@@ -131,6 +131,40 @@
 			<isPrimary>false</isPrimary>
 		<targetParams>
 		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetBuildings>false</canTargetBuildings>
+		  <canTargetItems>false</canTargetItems>
+		  <canTargetSelf>false</canTargetSelf>
+		</targetParams>
+		</MainVerb>
+    </AbilityUser.AbilityDef>
+	
+		<!--Ankle-->
+	<AbilityUser.AbilityDef>
+		<defName>cpcn_Jump</defName>
+		<label>jump</label>
+		<uiIconPath>UI/Icons/jump</uiIconPath>
+		<description>Fires a barrage of small projectiles fitted with target tracking, dealing a moderate amount of damage and never missing.</description>
+		<MainVerb Class="AbilityUser.VerbProperties_Ability">
+			<abilityDef>cpcn_MwWhip</abilityDef>
+		<verbClass>CyberpunkCybernetics.cpcn_jump</verbClass>
+		<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+		<tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+		<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+		<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>cpcn_MwProjectile</defaultProjectile>
+			<isViolent>true</isViolent>
+			<warmupTime>3</warmupTime>
+			<SecondsToRecharge>5.0</SecondsToRecharge>
+			<range>20</range>
+			<burstShotCount>1</burstShotCount>
+			<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+			<soundCast>cpcn_AbilityCastSound_Whip</soundCast>
+			<muzzleFlashScale>20</muzzleFlashScale>
+			<isPrimary>false</isPrimary>
+		<targetParams>
+		  <canTargetLocations>true</canTargetLocations>
+		  <canTargetPawns>false</canTargetPawns>
 		  <canTargetBuildings>false</canTargetBuildings>
 		  <canTargetItems>false</canTargetItems>
 		  <canTargetSelf>false</canTargetSelf>

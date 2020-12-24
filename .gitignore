@@ -349,3 +349,4 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 *.cache
+Source/CyberpunkCybernetics/.vs/CyberpunkCybernetics/v16/.suo

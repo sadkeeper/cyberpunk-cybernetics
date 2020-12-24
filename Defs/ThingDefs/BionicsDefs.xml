@@ -344,5 +344,74 @@
 		<addsHediff>cpcn_Monowire</addsHediff>
 	</RecipeDef>	
 	
+	<!--Fortified Ankles-->
+	
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>cpcn_Ankle</defName>
+		<label>fortified ankle</label>
+		<description>An installed Fortified Ankle.</description>
+		<spawnThingOnRemoved>cpcn_Ankle</spawnThingOnRemoved>
+		<addedPartProps>
+			<partEfficiency>1.5</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+	
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>cpcn_Ankle</defName>
+		<label>fortified ankle</label>
+		<description>The Monowire is a wire that retracts into the wrist, charging to deal a large amount of damage to the target within a decent range.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<Steel>250</Steel>
+			<Plasteel>20</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>3</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>SpecialWeapon</li>
+		</techHediffsTags>
+	</ThingDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>InstallAnkle</defName>
+		<label>install fortified ankles</label>
+		<description>Installs a Monowire in a pawn's forearm.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing projectile launch system arm.</jobString>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>cpcn_Ankle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>cpcn_Ankle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Foot</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>cpcn_Ankle</addsHediff>
+	</RecipeDef>
+	
 	
 </Defs>
