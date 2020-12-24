@@ -6,10 +6,11 @@
 					<value>
 					<li Class="MoharCustomHAR.MoharBodyAddon">
 						<path>Things/blank</path>
-						<bodyPart>right shoulder</bodyPart>
+						<bodyPart>right arm</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<layerInvert>true</layerInvert>
 						<layerOffset>-0.265</layerOffset>
+						<colorChannel>blank</colorChannel>
 						<drawSize>0.4</drawSize>
 						<angle>0</angle>
 						<drawSizePortrait>(0.01,0.01)</drawSizePortrait>
@@ -33,11 +34,11 @@
 						  </south>
 						  <north>
 							<bodyTypes>
-							  <Male>(0.25,0.15)</Male>
-							  <Female>(0.25,0.15)</Female>
-							  <Fat>(0.25,0.15)</Fat>
-							  <Hulk>(0.25,0.15)</Hulk>
-							  <Thin>(0.25,0.15)</Thin>
+							  <Male>(0.4,0.15)</Male>
+							  <Female>(0.4,0.15)</Female>
+							  <Fat>(0.4,0.15)</Fat>
+							  <Hulk>(0.4,0.15)</Hulk>
+							  <Thin>(0.4,0.15)</Thin>
 							</bodyTypes>
 							<crownTypes>
 							  <Normal_Average>(0,0)</Normal_Average>
@@ -45,11 +46,11 @@
 						  </north>
 						  <east>
 							<bodyTypes>
-							  <Male>(-0.48,0.52)</Male>
-							  <Female>(-0.48,0.52)</Female>
-							  <Fat>(-0.48,0.52)</Fat>
-							  <Hulk>(-0.48,0.52)</Hulk>
-							  <Thin>(-0.48,0.52)</Thin>
+							  <Male>(-0.48,-0.15)</Male>
+							  <Female>(-0.48,-0.15)</Female>
+							  <Fat>(-0.48,-0.15)</Fat>
+							  <Hulk>(-0.48,-0.15)</Hulk>
+							  <Thin>(-0.48,-0.15)</Thin>
 							</bodyTypes>
 							<crownTypes>
 							  <Normal_Average>(0,0)</Normal_Average>
@@ -59,7 +60,7 @@
 					</li>
 					<li Class="MoharCustomHAR.MoharBodyAddon">
 						<path>Things/blank</path>
-						<bodyPart>left shoulder</bodyPart>
+						<bodyPart>left arm</bodyPart>
 						<inFrontOfBody>true</inFrontOfBody>
 						<layerInvert>true</layerInvert>
 						<layerOffset>-0.265</layerOffset>
@@ -67,6 +68,7 @@
 						<angle>0</angle>
 						<drawSizePortrait>(0.01,0.01)</drawSizePortrait>
 						<drawIfUndrafted>false</drawIfUndrafted>
+						<colorChannel>blank</colorChannel>
 						<hediffGraphics>
 							<cpcn_MantisBlade>Things/mantisbladeL</cpcn_MantisBlade>
 						</hediffGraphics>
@@ -86,11 +88,11 @@
 						  </south>
 						  <north>
 							<bodyTypes>
-							  <Male>(-0.5,0.15)</Male>
-							  <Female>(-0.5,0.15)</Female>
-							  <Fat>(-0.5,0.15)</Fat>
-							  <Hulk>(-0.5,0.15)</Hulk>
-							  <Thin>(-0.5,0.15)</Thin>
+							  <Male>(-0.4,0.15)</Male>
+							  <Female>(-0.4,0.15)</Female>
+							  <Fat>(-0.4,0.15)</Fat>
+							  <Hulk>(-0.4,0.15)</Hulk>
+							  <Thin>(-0.4,0.15)</Thin>
 							</bodyTypes>
 							<crownTypes>
 							  <Normal_Average>(0,0)</Normal_Average>
@@ -98,11 +100,11 @@
 						  </north>
 						  <east>
 							<bodyTypes>
-							  <Male>(-0.48,0.52)</Male>
-							  <Female>(-0.48,0.52)</Female>
-							  <Fat>(-0.48,0.52)</Fat>
-							  <Hulk>(-0.48,0.52)</Hulk>
-							  <Thin>(-0.48,0.52)</Thin>
+							  <Male>(-0.48,-0.15)</Male>
+							  <Female>(-0.48,-0.15)</Female>
+							  <Fat>(-0.48,-0.15)</Fat>
+							  <Hulk>(-0.48,-0.15)</Hulk>
+							  <Thin>(-0.48,-0.15)</Thin>
 							</bodyTypes>
 							<crownTypes>
 							  <Normal_Average>(0,0)</Normal_Average>

@@ -83,7 +83,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Shoulder</li>
+			<li>Arm</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>cpcn_MantisBlade</addsHediff>
 	</RecipeDef>
@@ -169,7 +169,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Shoulder</li>
+			<li>Arm</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>cpcn_GorillaArm</addsHediff>
 	</RecipeDef>
@@ -254,7 +254,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Shoulder</li>
+			<li>Arm</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>cpcn_PLSdef</addsHediff>
 	</RecipeDef>
@@ -339,7 +339,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Shoulder</li>
+			<li>Arm</li>
 		</appliedOnFixedBodyParts>
 		<addsHediff>cpcn_Monowire</addsHediff>
 	</RecipeDef>	
