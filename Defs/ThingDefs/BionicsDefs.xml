@@ -5,6 +5,7 @@
 	<!--Mantis Blade-->
 
 	<HediffDef ParentName="AddedBodyPartBase">
+		<hediffClass>Cybernetics.MantisHediff</hediffClass> 
 		<defName>cpcn_MantisBlade</defName>
 		<label>mantis blade</label>
 		<description>An installed Mantis Blade.</description>

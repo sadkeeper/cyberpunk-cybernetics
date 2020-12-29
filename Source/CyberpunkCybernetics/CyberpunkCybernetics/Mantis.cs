@@ -10,62 +10,20 @@ using AbilityUser;
 
 namespace Cybernetics
 {
-    public class ModExtension_Mantis : AbilityUser.CompAbilityUser
+
+
+
+    public class MantisHediff : HediffWithComps
     {
 
-
-        private bool gaveAbilities = false;
-
-        private bool firstTick = false;
-
-        private bool Mantisbladed
+        public override void PostAdd(DamageInfo? dinfo)
         {
-            get
-            {
-                if (Pawn?.health?.hediffSet == null) return false;
-                if (Pawn.health.hediffSet.HasHediff(HediffDef.Named("cpcn_MantisBlade"))) return true;
-                return false;
-            }
+            Log.Message("Added");
         }
-
-        public override bool TryTransformPawn() => Mantisbladed;
-
-        public override void CompTick()
+        public override void PostRemoved()
         {
-            if (Pawn?.Spawned != true) return;
-            if (Find.TickManager.TicksGame > 200)
-            {
-                if (Mantisbladed)
-                {
-                    if (!firstTick)
-                    {
-                        PostInitializeTick();
-                    }
-                    base.CompTick();
-                }
-            }
-
+            Log.Message("removed");
         }
-
-        private void PostInitializeTick()
-        {
-            if (Pawn?.Spawned != true) return;
-            if (Pawn?.story == null) return;
-            firstTick = true;
-            this.Initialize();
-            if (!gaveAbilities)
-            {
-                gaveAbilities = true;
-                this.AddPawnAbility(CyberneticsDefOf.cpcn_MantisLeap);
-            }
-        }
-        public override void PostExposeData()
-        {
-            base.PostExposeData();
-            Scribe_Values.Look(ref this.gaveAbilities, "gaveAbilities", false);
-        }
-
-
-
     }
 }
+
