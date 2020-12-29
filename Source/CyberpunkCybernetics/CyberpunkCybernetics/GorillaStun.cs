@@ -5,14 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using RimWorld;
 using Verse;
-using JecsTools;
 using AbilityUser;
+using JecsTools;
 
 namespace Cybernetics
 {
-    public class MantisHediff : HediffWithComps
+    public class GorillaHediff : HediffWithComps
     {
-
         public override void PostAdd(DamageInfo? dinfo)
         {
             base.PostRemoved();
@@ -23,7 +22,7 @@ namespace Cybernetics
                 return;
             }
 
-            var abilityDef = CyberneticsDefOf.cpcn_MantisLeap;
+            var abilityDef = CyberneticsDefOf.cpcn_GorillaStun;
             comp.AddPawnAbility(abilityDef);
             Log.Message("Added");
         }
@@ -37,10 +36,9 @@ namespace Cybernetics
                 return;
             }
 
-            var abilityDef = CyberneticsDefOf.cpcn_MantisLeap;
+            var abilityDef = CyberneticsDefOf.cpcn_GorillaStun;
             comp.RemovePawnAbility(abilityDef);
             Log.Message("removed");
         }
     }
 }
-

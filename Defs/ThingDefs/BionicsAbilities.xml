@@ -153,7 +153,7 @@
 		<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
 			<hasStandardCommand>true</hasStandardCommand>
 			<defaultProjectile>cpcn_MwProjectile</defaultProjectile>
-			<isViolent>true</isViolent>
+			<isViolent>false</isViolent>
 			<warmupTime>3</warmupTime>
 			<SecondsToRecharge>5.0</SecondsToRecharge>
 			<range>20</range>

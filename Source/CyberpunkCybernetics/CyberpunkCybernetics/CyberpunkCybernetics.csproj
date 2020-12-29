@@ -37,9 +37,11 @@
     </Reference>
     <Reference Include="AbilityUser">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Users\Administrator\Desktop\Code\Rimworld Mods\JecsTools-master\Assemblies\AbilityUser.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="AlienRace">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Users\Administrator\Desktop\Code\Rimworld Mods\AlienRaces-master\AlienRaces-master\1.2\Assemblies\AlienRace.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
@@ -68,7 +70,7 @@
     <Compile Include="MonowireProjectile.cs" />
     <Compile Include="ProjectileLaunch.cs" />
     <Compile Include="FlyingObject.cs" />
-    <Compile Include="Stun.cs" />
+    <Compile Include="GorillaStun.cs" />
     <Compile Include="cpcn_leap.cs" />
     <Compile Include="CyberneticsDefOf.cs" />
     <Compile Include="Mantis.cs" />

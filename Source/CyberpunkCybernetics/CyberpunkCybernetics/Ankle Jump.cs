@@ -10,62 +10,36 @@ using AbilityUser;
 
 namespace Cybernetics
 {
-    public class ModExtension_Ankle : AbilityUser.CompAbilityUser
+    public class AnkleHediff : HediffWithComps
     {
 
-
-        private bool gaveAbilities = false;
-
-        private bool firstTick = false;
-
-        private bool Mantisbladed
+        public override void PostAdd(DamageInfo? dinfo)
         {
-            get
-            {
-                if (Pawn?.health?.hediffSet == null) return false;
-                if (Pawn.health.hediffSet.HasHediff(HediffDef.Named("cpcn_Ankle"))) return true;
-                return false;
-            }
-        }
+            base.PostRemoved();
+            var comp = pawn.TryGetComp<CompAbilityUser>();
 
-        public override bool TryTransformPawn() => Mantisbladed;
-
-        public override void CompTick()
-        {
-            if (Pawn?.Spawned != true) return;
-            if (Find.TickManager.TicksGame > 200)
+            if (comp == null)
             {
-                if (Mantisbladed)
-                {
-                    if (!firstTick)
-                    {
-                        PostInitializeTick();
-                    }
-                    base.CompTick();
-                }
+                return;
             }
 
+            var abilityDef = CyberneticsDefOf.cpcn_Jump;
+            comp.AddPawnAbility(abilityDef);
+            Log.Message("Added");
         }
-
-        private void PostInitializeTick()
+        public override void PostRemoved()
         {
-            if (Pawn?.Spawned != true) return;
-            if (Pawn?.story == null) return;
-            firstTick = true;
-            this.Initialize();
-            if (!gaveAbilities)
+            base.PostRemoved();
+            var comp = pawn.TryGetComp<CompAbilityUser>();
+
+            if (comp == null)
             {
-                gaveAbilities = true;
-                this.AddPawnAbility(CyberneticsDefOf.cpcn_Jump);
+                return;
             }
+
+            var abilityDef = CyberneticsDefOf.cpcn_Jump;
+            comp.RemovePawnAbility(abilityDef);
+            Log.Message("removed");
         }
-        public override void PostExposeData()
-        {
-            base.PostExposeData();
-            Scribe_Values.Look(ref this.gaveAbilities, "gaveAbilities", false);
-        }
-
-
-
     }
 }

@@ -92,6 +92,7 @@
 	<!--Gorilla Arms-->
 	
 	<HediffDef ParentName="AddedBodyPartBase">
+		<hediffClass>Cybernetics.GorillaHediff</hediffClass> 
 		<defName>cpcn_GorillaArm</defName>
 		<label>gorilla arm</label>
 		<description>An installed Gorilla Arm.</description>
@@ -178,6 +179,7 @@
 	<!-- Projectile Launch System -->
 	
 	<HediffDef ParentName="AddedBodyPartBase">
+		<hediffClass>Cybernetics.ProjectileLaunchHediff</hediffClass> 
 		<defName>cpcn_PLSdef</defName>
 		<label>projectile launch system</label>
 		<description>An installed Projectile Launch System.</description>
@@ -263,6 +265,7 @@
 	<!--Monowire-->
 
 	<HediffDef ParentName="AddedBodyPartBase">
+		<hediffClass>Cybernetics.MonowireHediff</hediffClass> 
 		<defName>cpcn_Monowire</defName>
 		<label>monowire</label>
 		<description>An installed Monowire.</description>
@@ -348,6 +351,7 @@
 	<!--Fortified Ankles-->
 	
 	<HediffDef ParentName="AddedBodyPartBase">
+		<hediffClass>Cybernetics.AnkleHediff</hediffClass> 
 		<defName>cpcn_Ankle</defName>
 		<label>fortified ankle</label>
 		<description>An installed Fortified Ankle.</description>

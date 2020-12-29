@@ -10,57 +10,36 @@ using JecsTools;
 
 namespace Cybernetics
 {
-    class MonowireProjectile : AbilityUser.CompAbilityUser
+    public class MonowireHediff : HediffWithComps
     {
-        private bool gaveAbilities = false;
 
-        private bool firstTick = false;
-
-        private bool Gorilla
+        public override void PostAdd(DamageInfo? dinfo)
         {
-            get
-            {
-                if (Pawn?.health?.hediffSet == null) return false;
-                if (Pawn.health.hediffSet.HasHediff(HediffDef.Named("cpcn_Monowire"))) return true;
-                return false;
-            }
-        }
+            base.PostRemoved();
+            var comp = pawn.TryGetComp<CompAbilityUser>();
 
-        public override bool TryTransformPawn() => Gorilla;
-
-        public override void CompTick()
-        {
-            if (Pawn?.Spawned != true) return;
-            if (Find.TickManager.TicksGame > 200)
+            if (comp == null)
             {
-                if (Gorilla)
-                {
-                    if (!firstTick)
-                    {
-                        PostInitializeTick();
-                    }
-                    base.CompTick();
-                }
+                return;
             }
 
+            var abilityDef = CyberneticsDefOf.cpcn_MwWhip;
+            comp.AddPawnAbility(abilityDef);
+            Log.Message("Added");
         }
+        public override void PostRemoved()
+        {
+            base.PostRemoved();
+            var comp = pawn.TryGetComp<CompAbilityUser>();
 
-        private void PostInitializeTick()
-        {
-            if (Pawn?.Spawned != true) return;
-            if (Pawn?.story == null) return;
-            firstTick = true;
-            this.Initialize();
-            if (!gaveAbilities)
+            if (comp == null)
             {
-                gaveAbilities = true;
-                this.AddPawnAbility(CyberneticsDefOf.cpcn_MwWhip);
+                return;
             }
-        }
-        public override void PostExposeData()
-        {
-            base.PostExposeData();
-            Scribe_Values.Look(ref this.gaveAbilities, "gaveAbilities", false);
+
+            var abilityDef = CyberneticsDefOf.cpcn_MwWhip;
+            comp.RemovePawnAbility(abilityDef);
+            Log.Message("removed");
         }
     }
 }
